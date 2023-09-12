@@ -8,7 +8,7 @@
 ### 4. Create a new file
 ### 5. Add a file to the staging area
 ### 6. Commit a file
-Create Conflict
+Second Test for Conflict
 ### 7. Push a branch
 ### 8. Open a pull request
 ### 9. Merge a pull request
