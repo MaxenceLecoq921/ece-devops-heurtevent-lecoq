@@ -8,7 +8,7 @@ userRouter
     .post('/', (req, resp) => {
       userController.create(req.body, (err, res) => {
         let respObj
-        if(err) {
+        if (err) {
           respObj = {
             status: "error",
             msg: err.message
@@ -27,12 +27,12 @@ userRouter
       const username = req.params.username;
       userController.get(username, (err, res) => {
         let respObj;
-        if(err || !res) {
+        if (err || !res) {
           respObj = {
             status: "error",
             msg: err ? err.message : "User not found"
           }
-          return resp.status(400).json(respObj);
+          return resp.status(404).json(respObj); // Changed status code to 404
         }
         respObj = {
           status: "success",
